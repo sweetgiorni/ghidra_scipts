@@ -83,7 +83,7 @@ public class PDBUniversalAnalyzeAll extends GhidraScript {
 		try {
 			AutoAnalysisManager m = AutoAnalysisManager.getAnalysisManager(program);
 			PdbUniversalAnalyzer analyzer = (PdbUniversalAnalyzer) m.getAnalyzer("PDB Universal");
-			PdbUniversalAnalyzer.setAllowRemoteOption(program, true);
+			PdbUniversalAnalyzer.setAllowUntrustedOption(program, true);
 
 			success = analyzer.added(program, program.getMemory(), monitor, this.log);
 		}

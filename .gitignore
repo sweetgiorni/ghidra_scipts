@@ -17,3 +17,6 @@ gradle-app.setting
 
 gradlew
 gradlew.bat
+
+bin
+dist
